@@ -79,7 +79,7 @@ class RestServerActor {
     server.get('/next-prime/:n', (req, res, next) => {
       this.log.info(`Handling next-prime request for number ${req.params.n}`);
 
-      this.primeFinder.sendAndReceive('nextPrime', perseInt(req.params.n))
+      this.primeFinder.sendAndReceive('nextPrime', parseInt(req.params.n))
         .then(result => {
           this.log.info(`Handled next-prime request for number ${req.params.n}, result: ${result}`);
           res.header('Content-Type', 'text/plain');
