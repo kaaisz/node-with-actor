@@ -10,8 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.3",
+    "cli-color": "^1.4.0",
+    "cli-colors": "0.0.2",
     "comedy": "^1.8.0",
+    "express": "^4.16.4",
     "restify": "^7.5.0",
-    "restify-errors": "^6.1.1"
+    "restify-errors": "^6.1.1",
+    "vorpal": "^1.12.0"
   }
 }
