@@ -92,4 +92,15 @@ http://localhost:8080/next-prime/5000
 http://localhost:8080/next-prime/500000000
 ```
 
+in terminal, this log will be appear if success
+```
+Mon Jan 14 2019 12:41:37 GMT-0800 (Pacific Standard Time) - info: Resulting actor configuration: {}
+Mon Jan 14 2019 12:41:51 GMT-0800 (Pacific Standard Time) - info: InMemoryActor(5c3cf401bd887e5cace477c1, RestServerActor): Handling next-prime request for number 30
+Mon Jan 14 2019 12:41:51 GMT-0800 (Pacific Standard Time) - info: InMemoryActor(5c3cf401bd887e5cace477c1, RestServerActor): Handled next-prime request for number 30, result: 31
+Mon Jan 14 2019 12:42:14 GMT-0800 (Pacific Standard Time) - info: InMemoryActor(5c3cf401bd887e5cace477c1, RestServerActor): Handling next-prime request for number 500
+Mon Jan 14 2019 12:42:14 GMT-0800 (Pacific Standard Time) - info: InMemoryActor(5c3cf401bd887e5cace477c1, RestServerActor): Handled next-prime request for number 500, result: 503
+Mon Jan 14 2019 12:42:21 GMT-0800 (Pacific Standard Time) - info: InMemoryActor(5c3cf401bd887e5cace477c1, RestServerActor): Handling next-prime request for number 500000000
+Mon Jan 14 2019 12:42:24 GMT-0800 (Pacific Standard Time) - info: InMemoryActor(5c3cf401bd887e5cace477c1, RestServerActor): Handled next-prime request for number 500000000, result: 500000003
+```
+
 success if you could see prime numbers on your browser(ツ)👍
