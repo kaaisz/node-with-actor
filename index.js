@@ -31,16 +31,15 @@ const StartActors = () => {
     .then(myActor => 
             //import baseactor - our actor is ready
             myActor.send('testMethod', '50')
-
           );
     console.log(notice('finished making BaseActor'));
-
 
   
     console.log(notice('finished making PrimeFinderActor'));
 }
 
 const StopActors = () => {
+
 
 }
 
