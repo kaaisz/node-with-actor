@@ -1,3 +1,5 @@
+// lifecycle - born
+
 const actors = require('comedy');
 const dddd = require('comedy');
 const vorpal = require('vorpal');
@@ -21,15 +23,21 @@ const StartActors = () => {
   console.log('starting actors');
   actors()
     .rootActor()
-    .then(rootActor => {
+    .then(rootActor => 
             //import baseactor
-            rootActor.createChild('/actors/BaseActor');
-          })
-    .then(myActor => {
+            rootActor.createChild('/actors/BaseActor')
+          
+          )
+    .then(myActor => 
             //import baseactor - our actor is ready
-            myActor.send('testMethod', '50');
-          });
-    console.log('finished starting actors')
+            myActor.send('testMethod', '50')
+
+          );
+    console.log(notice('finished making BaseActor'));
+
+
+  
+    console.log(notice('finished making PrimeFinderActor'));
 }
 
 const StopActors = () => {
