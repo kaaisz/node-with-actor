@@ -1,21 +1,18 @@
-var actors = require('comedy');
-var vorpal = require('vorpal');
-var clc = require("cli-color");
+const actors = require('comedy');
+const vorpal = require('vorpal');
+const clc = require("cli-color");
 
-var error = clc.red.bold;
-var warn = clc.yellow;
-var notice = clc.blue;
+const error = clc.red.bold;
+const warn = clc.yellow;
+const notice = clc.blue;
 
-function StartApplication()
-{
+const StartApplication = () => {
   StartActors();
 }
 
-function StopApplication()
-{}
+const StopApplication = () => {}
 
-function StartActors()
-	{
+const StartActors = () =>	{
     console.log(notice("STARTING ACTORS"));
     actors()
       .rootActor() // Get a root actor reference.
@@ -28,15 +25,13 @@ function StartActors()
         myActor.send('testMethod', '50'))
 
   console.log(notice("FINISHED STARTING ACTORS"));
-	}
+}
 
-function StopActors()
-{}
-
+const StopActors = () => {}
 
 
-function ApplicationStartup()
-  {
+
+const ApplicationStartup = () => {
   console.log(notice("================================================="));
   console.log(notice("STARTING SERVER"));
   console.log(notice("================================================="));
@@ -44,7 +39,7 @@ function ApplicationStartup()
 	console.log(warn("Warning: Warnings will appear in this color"));
 	console.log(notice("Notice: Will appear in this color"));
   StartActors();
-  }
+}
 
 
 
